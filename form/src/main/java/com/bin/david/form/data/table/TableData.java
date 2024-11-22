@@ -431,7 +431,7 @@ public class TableData<T> {
             setOnItemClickListener(new OnItemClickListener() {
                 @Override
                 public void onClick(Column column, String value, Object o, int col, int row) {
-                    TableData.this.onRowClickListener.onClick(column, t.get(row), col, row);
+                    TableData.this.onRowClickListener.onClick(column, t, col, row);
                 }
             });
         }
